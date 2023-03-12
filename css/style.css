@@ -1,0 +1,427 @@
+/* mengatur variable warna */
+:root{
+    --Background: #FFEBC9;
+    --BG_Content: #D79771;
+    --BG_Nav_Footer: #B05B3B; 
+
+    --Neutral_White: #FFF;
+    --Neutral_Black: #000;
+
+    --BG_Nav_Hover:#753422;
+
+    --BG_Harga_Normal: #FFEBC9;
+    --BG_Harga_Hover: #B05B3B;
+    --BG_Harga_Klik: #753422;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Background);
+    font-family: 'Livvic', Cambria, Cochin, Georgia, serif;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS untuk Bagian Header */
+.navbar-container {
+    background-color: var(--BG_Nav_Footer);
+    
+    width: 100%;
+    height: 100px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding-block: 1rem;
+    z-index: 999;
+    position: fixed;
+}
+
+.logo img {
+    margin-left: 80px;
+}
+
+.navbar-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px
+}
+
+.navbar-list li {
+    list-style-type: none;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--Neutral_White);
+    
+    padding: 15px;
+    border-radius: 50px;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-list li:hover a {
+    font-weight: bold;
+    background-color: var(--BG_Nav_Hover);
+}
+
+/* CSS untuk Bagian Main */
+main{
+    margin-top: 100px;
+    display: flex;
+
+    flex-direction: row;
+}
+/* CSS untuk Bagian Content */
+.content{
+    width:65%;
+    float: left;
+
+    margin: 15px 0;
+
+    flex-flow: column nowrap;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS untuk Bagian Article */
+article{
+    background-color: var(--Neutral_White);
+    width: 100%;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    margin: 15px 40px 15px 50px;
+    padding: 15px 30px;
+
+    display: flex;
+}
+
+.list-product h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.list-product{
+    margin: 30px;
+}
+
+.list-product h3{
+    text-align: center;
+}
+
+.list-product img{
+    width: 170px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.product-1, .product-2, .product-3, .product-4, .product-4, .product-5, .product-6{
+    background-color: var(--BG_Content);
+    border-radius: 20px;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+
+    padding: 10px 20px;
+    margin: 30px 15px 30px 40px;
+
+    float: left;
+}
+
+.list-product button {
+    font-family: 'Livvic', Cambria, Cochin, Georgia, serif;
+    font-size: 18px;
+    color: var(--Neutral_Black);
+
+    padding: 5px 10px;
+    margin: 15px 20px;
+
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: var(--BG_Harga_Normal);
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+.list-product button:hover {
+    color: var(--Neutral_White);
+    font-weight: bold;
+    background-color: var(--BG_Harga_Hover);
+}
+
+.list-product button:active {
+    color: var(--Neutral_White);
+    font-weight: bold;
+    background-color: var(--BG_Harga_Klik);
+    text-decoration: underline;
+}
+
+.list-testimony{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.list-testimony img{
+    border-radius: 999px;
+    margin-top: 15px;
+}
+
+.testimony-1, .testimony-2{
+    background-color: var(--BG_Content);
+    border-radius: 20px;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+
+    padding: 10px 20px;
+    margin: 30px;
+
+    float: left;
+}
+
+#Address{
+    padding: 30px;
+    display: flex;
+}
+
+#Address .left-image{
+    margin: 0 auto;
+}
+
+#Address .right-description{
+    text-align: center;
+    float: left;
+    margin: 0 auto;;
+}
+
+/* CSS untuk Bagian Aside */
+
+aside{
+    width:25%;
+    float:left;
+}
+
+.profile{
+    background-color: var(--Neutral_White);
+    width: 300px;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    margin: 30px 40px 30px 150px;
+    padding: 30px;
+
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+}
+
+.gallery-profile{
+    height: 360px;
+    overflow: hidden;
+}
+
+.photo-profile img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.personal-data{
+    text-align: center;
+}
+
+.contact ul{
+    margin: 15px;
+    padding: 0;
+    color: var(--Neutral_Black);
+}
+
+.contact li{
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+    color: var(--Neutral_Black);
+}
+
+.contact i{
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--Neutral_Black);
+}
+
+.contact li, a{
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--Neutral_Black);
+    
+    transition: all .2s ease-in-out;
+}
+
+.contact li:hover{
+    font-weight: bold;
+}
+
+.contact li:active{
+    text-decoration: underline;
+}
+
+/* CSS untuk Bagian Footer*/
+
+footer {
+    background-color: var(--BG_Nav_Footer);
+    color: var(--Neutral_White);
+    max-width: 100%;
+    width: 100%;
+    height: 100px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    display: flex;
+}
+
+
+/* CSS untuk Responsive Web */
+@media screen and (max-width: 1200px) {
+    .navbar-container{
+        flex-direction: column;  
+        font-size: 15px;
+
+        height: fit-content;
+    }
+
+    .navbar-container .logo{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .logo img{
+        width: 50%;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar-list li a{
+        justify-content: center;
+        margin: 0 auto;
+
+        font-size: 12px;
+    }
+
+    main{
+        flex-flow: column;
+        flex-direction: column;
+        flex-flow: column nowrap;
+
+        align-self: center;
+        align-items: stretch;
+        align-content: center;
+    }
+
+    #About, #Product, #Testimony, #Address{
+        flex-direction: column;
+    }
+
+    article{
+        padding: 15px;
+    }
+
+    .right-image img{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .product-1, .product-2, .product-3, .product-4, .product-4, .product-5, .product-6{
+        text-align: center;
+        margin: 15px auto;
+    }
+
+    .left-image img{
+        padding: 0;
+        margin-left: -100px;;
+    }
+
+    aside{
+        margin-left: -200px;
+    }
+
+    aside .profile{
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container{
+        flex-direction: column;  
+        font-size: 10px;
+
+        height: fit-content;
+    }
+
+    .navbar-container .logo img{
+        margin: 0 auto;
+        padding: 0;
+
+        width: 75%;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin: 15px 0 0 0;
+        padding: 0;
+    }
+    
+    .navbar-list li a{
+        justify-content: center;
+        margin: 0 auto;
+
+        font-size: 12px;
+    }
+
+    main aside {
+        flex-flow:column;
+        flex-direction: column;
+
+        align-self: center;
+        align-items: stretch;
+        align-content: center;
+    }
+
+    #About, #Product, #Testimony, #Address{
+        flex-direction: column;
+    }
+
+    article{
+        padding: 15px;
+        width: 300px;
+    }
+
+    .right-image img{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .product-1, .product-2, .product-3, .product-4, .product-4, .product-5, .product-6{
+        text-align: center;
+        margin: 15 auto;
+    }
+
+    .left-image img{
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

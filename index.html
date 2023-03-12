@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kuki.ly by Zirlyfera Zakiya Maulidia</title>
+
+        <!-- CSS File -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- JavaScript File -->
+        <script src="JavaScript/script.js"></script>
+
+        <!-- Font -->
+        <link href='https://fonts.googleapis.com/css?family=Livvic' rel='stylesheet'>
+
+        <!-- Font Awesome 5.15.4 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+
+    <body>
+        <header class="navbar-container">
+            <div class="logo">
+                <img src="assets/images/logo/logo-tulisan-putih.png" alt="Kuki.ly">
+            </div>
+
+            <nav class="navbar-list">
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Product">Product</a></li>
+                    <li><a href="#Testimony">Testimony</a></li>
+                    <li><a href="#Address">Address</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="content">
+                <article id="About" class="card">
+                    <div class="left-description">
+                        <h2>About</h2>
+                        <p>Beragam jenis cookies yang tersedia di <b>Kuki.ly</b> dibuat dengan <span style="text-decoration: underline;"><b>bahan-bahan premium</b></span> dan <span style="text-decoration: underline;"><b>dijual dengan harga ramah kantong</b></span>. </p>
+                        <p>Keistimewaan Cookies by Kuki.ly:</p>
+                        <ul>
+                            <li>Tidak mengandung bahan pengawet. </li>
+                            <li>Diproduksi dengan alat yang higienis.</li>
+                            <li>Halal.</li>
+                        </ul>
+                    </div>
+
+                    <div class="right-image">
+                        <img src="assets/images/logo/logo-full.png" alt="Logo-Kuki.ly">
+                    </div>
+                </article>
+
+                <article id="Product" class="card">
+                    <div class="list-product">
+                    <h2>Product</h2>   
+                        <div class="product-1">
+                            <h3>Snickerdoodles</h3>
+                            <img src="assets/images/product/Snickerdoodles.png" alt="Snickerdoodles">
+                            <br>
+                            <button onclick="snickerdoodles()">Rp6.000/pcs</button>
+                        </div>
+
+                        <div class="product-2">
+                            <h3>ChoChip Cookies</h3>
+                            <img src="assets/images/product/Chocolate-Chip-Cookies.png" alt="ChoChip Cookies">
+                            <br>
+                            <button onclick="chochip();">Rp8.000/pcs</button>
+                        </div>
+
+                        <div class="product-3">
+                            <h3>Oatmeal Cookies</h3>
+                            <img src="assets/images/product/Oatmeal-Cookies.png" alt="Oatmeal Cookie">
+                            <br>
+                            <button onclick="oatmeal()">Rp7.000/pcs</button>
+                        </div>
+
+                        <div class="product-4">
+                            <h3>Whoopie Pies</h3>
+                            <img src="assets/images/product/Whoopie-Pies.png" alt="Whoopie Pies">
+                            <br>
+                            <button onclick="whoopie();">Rp10.000/pcs</button>
+                        </div>
+
+                        <div class="product-5">
+                            <h3>Biscotti</h3>
+                            <img src="assets/images/product/Biscotti.png" alt="Biscotti">
+                            <br>
+                            <button onclick="biscotti();">Rp7.000/pcs</button>
+                        </div>
+
+                        <div class="product-6">
+                            <h3>Macaron</h3>
+                            <img src="assets/images/product/Macaron.png" alt="Macaron">
+                            <br>
+                            <button onclick="macaron();">Rp10.000/pcs</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="Testimony" class="card">
+                    <div class="list-testimony">
+                    <h2>Testimony</h2>    
+                        <div class="testimony-1">
+                            <img src="assets/images/testimony/jane-doe.png" alt="">
+                            <div class="text-testimony">
+                                <h3>Jane Doe</h3>
+                                <p><q>Cookies-nya lembut dan enak!</q></p>
+                                <p>⭐⭐⭐⭐</p>
+                            </div>
+                        </div>
+
+                        <div class="testimony-2">
+                            <img src="assets/images/testimony/jhone-doe.png" alt="">
+                            <div class="text-testimony">
+                                <h3>Jhone Doe</h3>
+                                <p><q>Kualitas cookies-nya terjamin!</q></p>
+                                <p>⭐⭐⭐⭐⭐</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="Address" class="card">
+                    <div class="left-image">
+                        <img src="assets/images/address/store.png" alt="Logo-Kuki.ly">
+                    </div>
+
+                    <div class="right-description">
+                        <h2>Address</h2>
+                        <p>Jalan Margatapa, No. 235 RT.002/RW.001 <br>
+                            Kelurahan Majalengka Wetan <br>
+                            Kecamatan Majalengka <br>
+                            Kabupaten Majalengka <br>
+                            Provinsi Java Barat <br>
+                            45411
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <aside>
+                <div class="profile">
+                    <div class="gallery-profile">
+                        <div class="photo-profile">
+                            <img class="photo" src="assets/images/profile/zirly-1.JPG" alt="photo1">
+                            <img class="photo" src="assets/images/profile/zirly-2.JPG" alt="photo2">
+                            <img class="photo" src="assets/images/profile/zirly-3.JPG" alt="photo3">
+                            <img class="photo" src="assets/images/profile/zirly-4.JPG" alt="photo4">
+                        </div>
+                    </div>
+
+                    <div class="profile-pescription">
+                        <div class="personal-data">
+                            <h3>Kuki.ly</h3>
+                            <p>Cookies Handmade with love by <span style="text-decoration: underline;"><b>Zirlyfera Zakiya Maulidia</b></span></p>
+                        </div>
+
+                        <div class="contact">
+                            <ul>
+                                <li><a href="https://wa.me/+6282311125098" target="_blank"><i class="fab fa-whatsapp"></i>+62 823-1112-5098</a></li>
+                                <li><a href="https://instagram.com/zirlyzkiyaa" target="_blank"><i class="fab fa-instagram"></i>@zirlyzkiyaa</a></li>
+                                <li><a href="http://t.me/zirlyzkiyaa" target="_blank"><i class="fab fa-telegram"></i>@zirlyzkiyaa</a></li>
+                                <li><a href="https://www.linkedin.com/in/zirlyferazm" target="_blank"><i class="fab fa-linkedin"></i>Zirlyfera Zakiya Maulidia</a></li>
+                                <li><a href="https://github.com/zirlyzkiyaa" target="_blank"><i class="fab fa-github"></i>zirlyzkiyaa</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <p>&copy; Kuki.ly by Zirlyfera Zakiya Maulidia - 2023</p>
+        </footer>
+    </body>
+</html>
